@@ -3,7 +3,7 @@ import pyperclip as pp
 
 
 output = ""
-data = [" ","a","b","c","d","e","f","g","h","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+data = [" ","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 def _copp():
     global output
@@ -94,6 +94,8 @@ def _encrypt():
         elif i == data[26]:
             output += "26"
             output += " "
+        else:
+            output += "?"
     lbl1["text"] = output
     win.update()
     ent1.delete(0,END)
