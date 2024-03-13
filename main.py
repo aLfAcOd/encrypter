@@ -160,6 +160,8 @@ def _decrypt():
             output += data[25]
         elif  i == "26":
             output += data[26]
+        else:
+            output += "?"
     lbl1["text"] = output
     win.update()
     ent1.delete(0,END)
